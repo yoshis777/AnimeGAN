@@ -1,3 +1,30 @@
+# メモ
+### インストール
+```
+$ conda create -n animegan python=3.6
+$ source activate animegan
+($ python --version) #=> 3.6.2
+$ pip install tensorflow==1.8.0
+$ pip install tqdm
+$ pip install scipy
+$ pip install opencv-python
+```
+
+### 準備
+* sampleフォルダ作成
+* https://github.com/TachibanaYoshino/AnimeGAN/releases/tag/dataset-1
+      * Haoyao-style.zip
+      * PJルートディレクトリに解答
+### 実行
+```
+python test.py --checkpoint_dir Haoyao-style --test_dir sample --style_name H
+```
+
+
+### 参考
+[実写をアニメ風に変換してくれるAnimeGANやーる（Windows10、Python3.6）](https://qiita.com/SatoshiGachiFujimoto/items/448047e8a2b1a9a7d668)
+[「AnimeGAN」を試してみる](https://qiita.com/karaage0703/items/e90eba45bab604da21c5)
+
 # AnimeGAN
 A Tensorflow implementation of AnimeGAN for fast photo animation  !!!
   
